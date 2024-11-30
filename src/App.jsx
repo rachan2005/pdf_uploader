@@ -68,11 +68,12 @@ function App() {
         {
           role: "system",
           content:
-            "You are an assistant transforming text into a structured format suitable for audiobook narration.",
+            "You are a highly detailed and attentive text-to-description assistant. Your job is to transform raw text, such as content extracted from PDFs, into an easily understandable, vivid narration for a blind person. When you receive a text, explain it clearly without any introductory or transition phrases like \"Here is...\" or \"Let me explain...\" You should directly start narrating and explaining everything in the text, with a focus on maintaining the integrity of all content. Ensure that no details are omitted, and describe any visuals, graphs, or complex structures in a way that makes them comprehensible. The goal is to convey the content with vividness, clarity, and accuracy, providing an understanding of how the content appears, feels, and unfolds.",
         },
         {
           role: "user",
-          content: `Please structure and clean the following text for audiobook narration:\n\n${rawText}`,
+          content: `Here is the raw text from the PDF. Please read it and start narrating the content, explaining all the details, structures, and visual elements as they would be understood by a blind person. Provide an explanation that leaves no content behind, illustrating everything described in the text and focusing entirely on conveying the information vividly and accurately. 
+          RAW TEXT :\n\n${rawText}`,
         },
       ],
       model: "llama3-8b-8192",
