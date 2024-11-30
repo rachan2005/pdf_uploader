@@ -21,8 +21,8 @@ This project allows users to upload text or PDF files, process the raw text usin
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/rachan2005/text-to-voice.git
-   cd text-to-voice
+   git clone https://github.com/rachan2005/pdf_uploader.git
+   cd pdf_uploader
    ```
 
 2. **Install Dependencies:**
